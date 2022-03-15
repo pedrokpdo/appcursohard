@@ -7,7 +7,7 @@ padding: 20px;
 display: flex;
 align-items: center;
 justify-content: center;
-co;
+
 
 a{
     color: #fff;

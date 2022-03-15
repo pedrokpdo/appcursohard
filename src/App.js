@@ -1,18 +1,19 @@
 import React from "react";
-import {BrowserRouter} from 'react-router-dom'
+import { Router } from 'react-router-dom'
 
+import history from "./services/history";
 import GlobalStyled from "./styles/GlobalStyled";
 import Header from "./components/header";
 import Routes from "./routes";
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <Header/>
-   <Routes />
-   <GlobalStyled/>
-   </BrowserRouter>
-   </>
+      <Router history={history}>
+        <Header />
+        <Routes />
+        <GlobalStyled />
+      </Router>
+    </>
   )
 
 }
